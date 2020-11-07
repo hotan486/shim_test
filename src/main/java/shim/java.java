@@ -1,5 +1,7 @@
 package shim;
 
+import java.util.Random;
+
 public class java {
 
 	public static void main(String[] args) {
@@ -7,9 +9,15 @@ public class java {
 		//type();
 		
 		
-		java_basic();
+		java_basic(); //호출
+		
+		character();
 	}
 	
+	
+	
+	//선언
+	@SuppressWarnings("unused")
 	public static void java_basic() {
 		
 		//순차실행
@@ -29,6 +37,129 @@ public class java {
 		
 		// 조건문 
 		
+		boolean weaponMountingYn = true;
+		
+		String weaponMounting = (weaponMountingYn == false)?"미착용":"착용";
+		
+		if(!weaponMountingYn)
+			weaponMounting = "미착용";
+		else
+			weaponMounting = "착용";
+		
+		System.out.println("무기 착용 여부 : " + weaponMountingYn);
+		System.out.println("무기 착용 여부 : " + weaponMounting);
+
+		
+		Random random = new Random();
+		
+		float gradeNumber = random.nextInt(6) + 1;
+		
+		String grade = null;
+		
+//		
+//		if(gradeNumber >= 6.0) {			
+//			grade = "S";
+//		}else if(gradeNumber >= 5.0) {
+//			grade = "A";
+//		}else if(gradeNumber >= 4.0) {
+//			grade = "B";
+//		}else if(gradeNumber >= 3.0) {
+//			grade = "C";
+//		}else if(gradeNumber >= 2.0) {
+//			grade = "D";
+//		}else if(gradeNumber >= 1.0) {
+//			grade = "E";
+//		}
+		
+		switch ((int)gradeNumber) {
+		case 6:
+			grade = "S";
+			break;
+		case 5:
+			grade = "A";
+			break;
+		case 4:
+			grade = "B";
+			break;
+		case 3:
+			grade = "C";
+			break;
+		case 2:
+			grade = "D";
+			break;
+		case 1:
+			grade = "E";
+			break;
+
+		default:
+			break;
+		}
+		
+		System.out.println("무기 등급 : " + grade + "급");
+		
+		
+		
+		float criticalAttackPercent = 0;
+		
+//		for(int i= 0;i<10;i++) {
+//			
+//			criticalAttackPercent = random.nextInt(100) + 1;
+//			
+//			if(criticalAttackPercent <= 20) {
+//				System.out.println(criticalAttackPercent+"%로 크리티컬 공격에 성공했습니다.");
+//			}else {
+//				System.out.println(criticalAttackPercent+"%로 크리티컬 공격에 실패했습니다.");
+//			}
+//		}
+		
+		int i = 0;
+		
+		while(i<10) {
+			
+			criticalAttackPercent = random.nextInt(100) + 1;
+			
+			if(criticalAttackPercent <= 20) {
+				System.out.println(criticalAttackPercent+"%로 크리티컬 공격에 성공했습니다.");
+			}else {
+				System.out.println(criticalAttackPercent+"%로 크리티컬 공격에 실패했습니다.");
+			}
+			
+			i++;
+		}
+		
+		
+		
+		// 연산관용어구
+		int a = 6009;
+		
+		if(a%3 == 0) { // 012 
+			// 나누어 떨어진다
+			// a는 3의 배수 
+			// 3은 a의 약수			
+		}
+		
+		if(a%2 == 0) { // 01
+			// 모든 짝수			
+		}
+		
+		if(a%2 == 1) { // 01
+			// 홀수			
+		}
+		
+		int b = a%10; //일의 자리
+		
+		System.out.println(b);
+		
+		b = a/10; //자릿수 줄이기
+		
+		System.out.println(b);
+	
+		
+		
+		
+	}
+	
+	public static void character() {
 		
 	}
 	
