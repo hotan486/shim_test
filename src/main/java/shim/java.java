@@ -9,7 +9,7 @@ public class java {
 		//type();
 		
 		
-		java_basic(); //호출
+		//java_basic(); //호출
 		
 		character();
 	}
@@ -160,6 +160,135 @@ public class java {
 	}
 	
 	public static void character() {
+		
+		String city1 = "Asia";
+		String city2 = "Europe";
+		
+		int number = 0;
+		
+		// 기본 타입은 메서드를 갖지 않지만 
+		// String은 new를 사용하지않고 생성하는 참조 타입으로 메서드를 갖는다.
+		
+		
+		
+		//city2 = city1;
+		
+		
+		System.out.println(city1.length());
+		String city3 = String.format("%s-%s", city1,city2);
+		System.out.println(city1);
+		System.out.println(city2);
+		System.out.println(city3);
+		
+		// 배열 
+		int[] num2 = {1,2,3};
+		//num2 = {1,2}; //초기화 불가
+		//num2 = new int[6];
+		//num2[0] = 2;
+		
+		for (int i : num2) {
+			System.out.println(i);
+		}
+		
+		int intSize = 8;
+		
+		int[] lotto = new int[intSize]; // 0,0,0,0,0,0 초기화
+		
+		
+		lotto[0] = 2;
+		lotto[1] = 2;
+		lotto[2] = 2;
+		lotto[3] = 2;
+		lotto[4] = 2;
+		lotto[5] = 2;
+		lotto[6] = 2;
+		
+		for (int i : lotto) {
+			System.out.println(i);
+		}
+		
+		lotto = new int[9]; 
+		
+		for (int i : lotto) {
+			System.out.println(i);
+		}
+		
+		String[] myNum = new String[6];
+		myNum[0] = "학교";
+		myNum[2] = "학교";
+		myNum[1] = "학교";
+		myNum[3] = "학교";
+		myNum[4] = "학교";
+		myNum[5] = "학교";
+		
+		for (String i : myNum) {
+			System.out.println(i);
+		}
+		
+		
+		// 문자열 메서드 
+		
+		String text = "hello";
+		
+		// 자리의 문자 
+		char c = text.charAt(0);
+		System.out.println(c);
+		
+		// 문자열 더하기 
+		String text1 = text.concat(" world");
+		System.out.println(text1);
+		
+		// 해당 문자열 포함 여부
+		boolean text2 = text1.contains("world");
+		System.out.println(text2);
+		
+		text2 = text1.equals(text);
+		System.out.println(text2);
+		
+		
+		text = "ABC";
+		text1 = "abc";
+		
+		text2 = text1.equalsIgnoreCase(text);
+		System.out.println(text2);
+		
+		int num = text.indexOf("D");
+		System.out.println(num);
+		
+		text = " ABC ";
+		
+		String trimText = text.trim();
+		System.out.println(text);
+		System.out.println(trimText);
+		int len = trimText.length();
+		System.out.println(len);
+		
+		String substringText = trimText.substring(1);
+		System.out.println(substringText);
+		
+		substringText = trimText.substring(1,2);
+		System.out.println(substringText);
+		
+		//CharSequence target
+		substringText = text.replace(" ","-");
+		System.out.println(substringText);
+		
+		//String regex  정규식으로 표현이 가능하다 
+		substringText = text.replaceAll(" ","=");
+		System.out.println(substringText);
+		
+		text = text.toUpperCase();
+		System.out.println(text);
+		
+		
+		text = text.toLowerCase();
+		System.out.println(text);
+		
+		String[] texts = text.split("");
+		
+		for (String string : texts) {
+			System.out.println(string);
+		}
 		
 	}
 	
