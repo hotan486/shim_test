@@ -290,6 +290,16 @@ public class java {
 			System.out.println(string);
 		}
 		
+		
+		// 수학 메서드
+		Double sin = Math.sin( 30 * Math.PI / 180); 
+		Double cos = Math.cos( 30 * Math.PI / 180); 
+		Double a = Math.toRadians(90);
+		System.out.println(sin);
+		System.out.println(cos);
+		System.out.println(a);
+		
+		Double a = Math.sq(90);
 	}
 	
 	
