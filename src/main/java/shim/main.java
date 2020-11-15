@@ -9,6 +9,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+
 public class main {
 
 	public static void main(String[] args) throws IOException {
@@ -31,8 +32,34 @@ public class main {
 				String html = document.html();
 				String text = document.text();
 				
-				Elements element = document.select("a table:nth-child(5) tbody tr:nth-child(-n+4) td:nth-child(2)");
-				System.out.println(element.text());
+				//Elements element = document.select("a table:nth-child(5) tbody tr:nth-child(-n+3)");
+				
+				Elements elementWeights = document.select("a table:nth-child(5) tbody tr:nth-child(-n+4) td:nth-child(1)");
+				Elements elementWeaponName = document.select("a table:nth-child(5) tbody tr:nth-child(-n+4) td:nth-child(2) strong");
+				
+
+				System.out.println(elementWeights.size());
+				System.out.println(elementWeaponName.size());
+				
+				String weaponNames[] = new String[elementWeaponName.size()]; //Create an array
+				
+				
+				
+			    
+			
+			    String[] weights = elementWeights.text().split(" ");
+			    
+			    for (String weight : weights) {
+
+					System.out.println(weight);
+				}	
+
+
+				
+				
+				
+				
+				//System.out.println(element.text());
 				
 				//select를 이용하여 원하는 태그를 선택한다. select는 원하는 값을 가져오기 위한 중요한 기능이다.
 				//Elements element = doc.select("div.sect-movie-chart");    
