@@ -12,6 +12,8 @@ public class java {
 		//java_basic(); //호출
 		
 		character();
+		
+		
 	}
 	
 	
@@ -299,7 +301,7 @@ public class java {
 		System.out.println(cos);
 		System.out.println(a);
 		
-		Double a = Math.sq(90);
+		//Double a = Math.sq(90);
 	}
 	
 	
@@ -380,8 +382,8 @@ public class java {
 		System.out.println(Boolean.FALSE);
 		
 		System.out.println("=== Character ===");
-		System.out.println((int)Character.MIN_VALUE);
-		System.out.println((int)Character.MAX_VALUE);
+		//System.out.println((int)Character.MIN_VALUE);
+		//System.out.println((int)Character.MAX_VALUE);
 		
 		//참조타입
 		Weapon weapon = new Weapon();
