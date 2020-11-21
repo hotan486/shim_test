@@ -13,4 +13,13 @@ public class RacingGame {
 		
 	}
 	
+	
+	
+	private int num;
+	
+	private static int num1;
+	private static final int num2 = 10;
+	
+	
+	
 }

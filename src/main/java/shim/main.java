@@ -10,7 +10,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 
-public class main {
+public class Main {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
