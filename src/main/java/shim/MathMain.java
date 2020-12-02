@@ -1,24 +1,24 @@
 package shim;
 
+import java.util.Arrays;
+
 public class MathMain {
 	
-	public static void main(String[] args){
+	public static void main(String[] args) {
+		System.out.println("[-128~127 초과값일 경우]");
+		Integer obj1 = 300;
+		Integer obj2 = 300;
+		System.out.println("==결과: " + (obj1 == obj2));
+		System.out.println("언박싱후 ==결과: " + (obj1.intValue() == obj2.intValue()));
+		System.out.println("equals() 결과: " + obj1.equals(obj2));
+		System.out.println();
 		
-		String slat = "37.52127220511242";
-		//String slat = "hello";
-		
-		// trim 공백 제거 
-		// Double.parseDouble 더블으로 변환
-		double latitude = Double.parseDouble(slat.trim());
-		System.out.println(latitude);
-		
-		/*
-		 * 0 < random < 10 
-		 * */
-		
-		int makeOne = (int)(Math.random()*10);
-		// 0 ~ 9 사이 정수 
-		System.out.println(makeOne);
-	}	
+		System.out.println("[-128~127 범위값일 경우]");
+		Integer obj3 = 10;
+		Integer obj4 = 10;
+		System.out.println("==결과: " + (obj3 == obj4));
+		System.out.println("언박싱후 ==결과: " + (obj3.intValue() == obj4.intValue()));
+		System.out.println("equals() 결과: " + obj3.equals(obj4));
+	}
 	
 }
