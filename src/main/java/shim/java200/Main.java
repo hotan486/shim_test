@@ -22,32 +22,40 @@ public class Main {
 		
 		
 		//41
-		boolean isS = isLeapYear(2020);
-		System.out.println(isS);
+		//boolean isS = isLeapYear(2020);
+		//System.out.println(isS);
 		
-		System.out.println("\n---------------------");
+		//System.out.println("\n---------------------");
 		
 		//42
-		for(int i = 0 ; i < 101 ; i++) {		
-			double fahrenheit = 9.0/5 * i + 32;			
-			System.out.println(isTemperature(i, fahrenheit));
-		}
+		//for(int i = 0 ; i < 101 ; i++) {		
+		//	double fahrenheit = 9.0/5 * i + 32;			
+		//	System.out.println(isTemperature(i, fahrenheit));
+		//}
 		
-		System.out.println("\n---------------------");
+		//System.out.println("\n---------------------");
 		
 		//43
-		showOddnEvenw(122);
+		//showOddnEvenw(122);
 		
-		System.out.println("\n---------------------");
+		//System.out.println("\n---------------------");
 		
 		//44
-		showOddnEven(122);
+		//showOddnEven(122);
 		
 		
 		System.out.println("\n---------------------");
 		
 		//45
-		showOddnEvenf(122);
+		//showOddnEvenf(122);
+		
+		
+		//66
+		StringTest stringTest = new StringTest();
+		stringTest.stringTest();
+		
+		
+		
 	}
 	
 	public static void showOddnEven(int num) {
